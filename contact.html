@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Dipta Bhadra for PhD opportunities, research collaboration, and formal inquiries.">
+    <title>Contact | Dipta Bhadra</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 50px;
+        }
+        
+        .contact-info-item {
+            margin-bottom: 25px;
+        }
+        .contact-info-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+        .contact-info-item p, .contact-info-item a {
+            font-size: 1.15rem;
+            color: var(--primary-navy);
+            font-weight: 600;
+        }
+        .contact-info-item a:hover {
+            color: var(--accent-steel-blue);
+        }
+
+        .contact-form {
+            background-color: var(--secondary-white);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(10, 35, 66, 0.05);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #D1D5DB;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-steel-blue);
+            box-shadow: 0 0 0 3px rgba(46, 134, 171, 0.1);
+        }
+        textarea.form-control {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .contact-form {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="header" class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Dipta Bhadra</a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="cv.html" class="btn btn-primary nav-cta">Download CV</a>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="section bg-light">
+            <div class="container">
+                <h1 class="section-title fade-in">Get In Touch</h1>
+                
+                <div class="contact-grid fade-in">
+                    <!-- Contact Information -->
+                    <div>
+                        <div style="background-color: var(--bg-light-grey); padding: 30px; border-radius: 8px; margin-bottom: 30px; border: 1px solid rgba(46, 134, 171, 0.2);">
+                            <p style="font-size: 1.1rem; line-height: 1.6; color: var(--primary-navy); margin: 0;">
+                                <strong>I am currently seeking PhD positions starting Fall 2025/Spring 2026.</strong> Feel free to reach out for research discussions or opportunities.
+                            </p>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <h3>Email</h3>
+                            <a href="mailto:dipta.bhadra@outlook.com">dipta.bhadra@outlook.com</a>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <h3>Mobile</h3>
+                            <p>+880 1848 388 927</p>
+                        </div>
+
+                        <div class="contact-info-item" style="margin-top: 40px;">
+                            <h3>Academic Profiles</h3>
+                            <div style="display: flex; gap: 15px; margin-top: 10px;">
+                                <a href="#" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.9rem;">LinkedIn</a>
+                                <a href="#" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.9rem;">Google Scholar</a>
+                                <a href="#" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.9rem;">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('This is a static placeholder form. Please contact via email directly.');">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" class="form-control" required placeholder="Professor John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" class="form-control" required placeholder="john.doe@university.edu">
+                            </div>
+                            <div class="form-group">
+                                <label for="institution">Institution / Organization</label>
+                                <input type="text" id="institution" name="institution" class="form-control" placeholder="University Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" class="form-control" required placeholder="Hello Dipta, I came across your research on..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.05rem;">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h3>Dipta Bhadra</h3>
+                <p>Naval Architecture & Marine Engineering Graduate, BUET</p>
+                <div class="footer-contact">
+                    <p><a href="mailto:dipta.bhadra@outlook.com">dipta.bhadra@outlook.com</a></p>
+                </div>
+            </div>
+            <div class="footer-links-group">
+                <div class="footer-heading">Quick Links</div>
+                <ul class="footer-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <div class="footer-heading">Connect</div>
+                <a href="#" class="social-link" title="LinkedIn">LinkedIn</a>
+                <a href="#" class="social-link" title="Google Scholar">Google Scholar</a>
+                <a href="#" class="social-link" title="GitHub">GitHub</a>
+                <a href="cv.html" class="btn btn-primary btn-sm footer-cv">Download CV</a>
+            </div>
+        </div>
+        <div class="container">
+            <p class="footer-bottom">&copy; 2025 Dipta Bhadra. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academic background, skills, and standardized test scores of Dipta Bhadra.">
+    <title>Academics | Dipta Bhadra</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .academic-section {
+            margin-bottom: 40px;
+        }
+        .academic-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            color: var(--primary-navy);
+            border-bottom: 2px solid var(--bg-light-grey);
+            padding-bottom: 10px;
+        }
+        .skill-row {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 20px;
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            align-items: center;
+        }
+        .skill-row:last-child {
+            border-bottom: none;
+        }
+        .skill-category {
+            font-weight: 600;
+            color: var(--primary-navy);
+        }
+        .skill-items {
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        @media (max-width: 768px) {
+            .skill-row {
+                grid-template-columns: 1fr;
+                gap: 5px;
+                padding: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="header" class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Dipta Bhadra</a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="cv.html" class="btn btn-primary nav-cta">Download CV</a>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="section bg-light">
+            <div class="container" style="max-width: 900px;">
+                <h1 class="section-title fade-in">Academics &amp; Skills</h1>
+                
+                <div class="card fade-in" style="margin-bottom: 30px;">
+                    <div class="academic-section">
+                        <h2>Education</h2>
+                        <div style="margin-bottom: 20px;">
+                            <h3 style="font-size: 1.3rem; margin-bottom: 5px;">B.Sc. in Naval Architecture & Marine Engineering</h3>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 10px;">Bangladesh University of Engineering and Technology (BUET) | Feb 2020 – Mar 2025</p>
+                            <p style="font-size: 1.1rem;"><strong>CGPA:</strong> 3.62 / 4.00</p>
+                            <p style="margin-top: 10px;"><strong>Scholarship:</strong> BUET University Stipend Scholarship — 5 consecutive sessions (2020–2023)</p>
+                        </div>
+                    </div>
+
+                    <div class="academic-section">
+                        <h2>Standardized Tests</h2>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                            <div style="background-color: var(--bg-light-grey); padding: 20px; border-radius: 6px;">
+                                <h3 style="margin-bottom: 15px; font-size: 1.2rem; color: var(--accent-steel-blue);">GRE <span style="color: var(--text-dark);">Total: 322</span></h3>
+                                <ul class="styled-list">
+                                    <li>Quant: 165</li>
+                                    <li>Verbal: 157</li>
+                                    <li>AWA: 3.0</li>
+                                </ul>
+                            </div>
+                            <div style="background-color: var(--bg-light-grey); padding: 20px; border-radius: 6px;">
+                                <h3 style="margin-bottom: 15px; font-size: 1.2rem; color: var(--accent-steel-blue);">TOEFL <span style="color: var(--text-dark);">Total: 97</span></h3>
+                                <ul class="styled-list">
+                                    <li>Reading: 25</li>
+                                    <li>Listening: 27</li>
+                                    <li>Speaking: 20</li>
+                                    <li>Writing: 25</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="academic-section">
+                        <h2>Technical Skills</h2>
+                        <div>
+                            <div class="skill-row">
+                                <div class="skill-category">Programming</div>
+                                <div class="skill-items">C++, Fortran, Python, MATLAB, LaTeX</div>
+                            </div>
+                            <div class="skill-row">
+                                <div class="skill-category">CFD & Simulation</div>
+                                <div class="skill-items">OpenFOAM, ANSYS Fluent, Star CCM+, QBlade</div>
+                            </div>
+                            <div class="skill-row">
+                                <div class="skill-category">Design & Modelling</div>
+                                <div class="skill-items">SolidWorks, Rhinoceros, AutoCAD</div>
+                            </div>
+                            <div class="skill-row">
+                                <div class="skill-category">ML & AI</div>
+                                <div class="skill-items">Machine Learning, Deep Learning</div>
+                            </div>
+                            <div class="skill-row">
+                                <div class="skill-category">Methods</div>
+                                <div class="skill-items">VOF, Overset Meshing, PIMPLE, Virtual PMM, FEA</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="academic-section" style="margin-bottom: 0;">
+                        <h2>Certifications & Experience</h2>
+                        
+                        <div style="margin-bottom: 25px;">
+                            <h3 style="font-size: 1.15rem; margin-bottom: 15px;">Certifications</h3>
+                            <ul class="styled-list" style="color: var(--text-dark);">
+                                <li><strong>Introduction to Programming with MATLAB</strong> — Vanderbilt University, Coursera (Jul 2024)</li>
+                                <li><strong>Object-Oriented Data Structures in C++</strong> — University of Illinois at Urbana-Champaign, Coursera (Jul 2024)</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 style="font-size: 1.15rem; margin-bottom: 5px;">Industrial Trainee</h3>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 10px;">Chittagong Dry Dock Limited (CDDL) | Mar 2023</p>
+                            <p>Completed visits across foundry, docking, electrical, and management divisions. Conducted a safety-focused assessment identifying operational risks and evaluating fire and emergency procedures.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h3>Dipta Bhadra</h3>
+                <p>Naval Architecture & Marine Engineering Graduate, BUET</p>
+                <div class="footer-contact">
+                    <p><a href="mailto:dipta.bhadra@outlook.com">dipta.bhadra@outlook.com</a></p>
+                </div>
+            </div>
+            <div class="footer-links-group">
+                <div class="footer-heading">Quick Links</div>
+                <ul class="footer-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <div class="footer-heading">Connect</div>
+                <a href="#" class="social-link" title="LinkedIn">LinkedIn</a>
+                <a href="#" class="social-link" title="Google Scholar">Google Scholar</a>
+                <a href="#" class="social-link" title="GitHub">GitHub</a>
+                <a href="cv.html" class="btn btn-primary btn-sm footer-cv">Download CV</a>
+            </div>
+        </div>
+        <div class="container">
+            <p class="footer-bottom">&copy; 2025 Dipta Bhadra. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
